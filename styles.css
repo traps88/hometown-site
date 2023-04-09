@@ -5,39 +5,48 @@ LIGHT: #F1FAEE
 AQUA: #A8DADC
 LIGHT BLUE: #457B9D
 DARK BLUE: #1D3557
-
 */
 
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
 
-.hero{
+
+.hero {
     background-image: url("images/sleeping.jpg");
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: 350px;
     display:flex;
     flex-direction: column;
     align-items: start;
     justify-content: start;
-    
 }
 
-.hero h1,h2{
+.hero h1, h2 {
     color:#fff;
     padding: 5px 10px;
     margin: 30px 0 0 30px;
 }
 
-.hero h1{
+.hero h1 {
     background:#22577a;
     border-radius: 5px;
     margin-bottom:0;
 }
 
-.hero h2{
+.hero h2 {
     background:#57cc99;
     border-radius: 5px;
     font-size: 18px;
@@ -45,61 +54,66 @@ body {
     text-align: center;
 }
 
-.activities h3{
-    width:720px;
+.activities h3 {
+    width: 720px;
     height: 20px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
 }
 
-.activity-container{
+.activity-container {
     display: flex;
     align-items: start;
     justify-content: space-around;
-    margin:auto;
-    width: 720px;
-    margin:auto;
+    margin: 0 auto;
+    max-width: 960px; /* Set a max-width to ensure all activities fit */
     padding: 60px 0px;
-    flex-direction: row-wrap;
+    flex-wrap: wrap; /* Add flex-wrap to allow activities to wrap to a new line */
+}
+v
+
+.activities {
+    width: 200px;
+    margin-bottom: 50px; /* Add margin to the bottom */
 }
 
-.activities{
-    width:200px;
-}
 
-.activities-group img{
+.activities-group img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
 }
 
-.activities-group img:hover{
+.activities-group img:hover {
     width: 150px;
     height: 150px;
 }
 
-.activities-group{
+.activities-group {
     width: 200px;
     height: 230px;
     margin-right: 20px;
     text-align: center
 }
 
-.guide{
+.guide {
     height: 400px;
-     
+    clear: both;
 }
-.guide-card img{
+
+.guide-card img {
     width: 180px;
     height: 250px;
+    border-radius: 5px;
+    padding:10px;
 }
 
 .guide-card{
     width: 400px;
     height: 300px;
-    margin: 50px auto 0 auto;
+    margin: 20px auto 0 auto;
     padding:10px;
     border-radius: 10px;
     border-bottom:6px solid #57cc99;
@@ -109,16 +123,11 @@ body {
     align-items: center;
 }
 
-.guide-text{
-    
+
+.guide-text {
     text-align: center;
 }
 
-.guide-card img{
-    border-radius: 5px;
-    padding:10px;
-}
-
-.guide-card p{
+.guide-card p {
     font-style: italic;
 }
